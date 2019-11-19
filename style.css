@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+    Page Layout
+   =========================
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+    Lists
+   =========================
+*/
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+    Navigation
+   =========================
+*/
+
+nav {
+    background: lightcoral;
+    height: 50px;
+}
+
+/* =========================
+    Article
+   =========================
+*/
+
+article {
+    background: lightgoldenrodyellow;
+    height: 1000px;
+}
+
+
+/* =========================
+    Images
+   =========================
+*/
+
+/* =========================
+    Related Articles
+   =========================
+*/
+.more-articles {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr)
+}
+
+.related {
+    background: lightgrey;
+    grid-row: span 2;
+}
+
+.editor-picks {
+    background: lightseagreen
+}
+
+.popular {
+    background: lightskyblue;
+    grid-row: 1 / span 3;
+    grid-column: 2 / 3;
+}
+
+/* =========================
+    Footer
+   =========================
+*/
+
+.primary-footer {
+    background: lime;
+    display: flex;
+}
+
+.secondary-footer {
+    background: fuchsia;
+    font-size: 0.8em;
+}
+
+.secondary-footer ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.secondary-footer ul li {
+    margin: 5px 5px;
+}
