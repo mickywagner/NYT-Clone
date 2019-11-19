@@ -23,6 +23,15 @@ ul {
     list-style: none;
 }
 
+/* =========================
+    Links
+   =========================
+*/
+
+article a {
+    color: #145181;
+    
+}
 
 /* =========================
     Navigation
@@ -30,8 +39,8 @@ ul {
 */
 
 nav {
-    background: lightcoral;
     height: 50px;
+    border-bottom: 1px solid lightgrey;
 }
 
 /* =========================
@@ -40,8 +49,42 @@ nav {
 */
 
 article {
-    background: lightgoldenrodyellow;
-    height: 1000px;
+    text-align: center;
+}
+
+article h1 {
+    font-style: italic;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 20px 200px 20px 20px;
+    text-align: left;
+    font-size: 2.25em;
+}
+
+article h4 {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: justify; 
+    padding: 5px 20px;
+    font-size: 1.5em;
+}
+
+article p {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    line-height: 1.25em;
+    text-align: justify;
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 20px;
+    
+}
+
+span.caps {
+    text-transform: uppercase;
 }
 
 
@@ -49,6 +92,13 @@ article {
     Images
    =========================
 */
+
+
+.image img {
+    max-width: 945px;
+    width: 100%;
+    height: auto;
+}
 
 /* =========================
     Related Articles
