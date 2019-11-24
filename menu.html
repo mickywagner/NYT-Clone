@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/c362ea9f56.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Menu Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li id="menu" class="has-children">
+            <button><i class="fas fa-bars"></i>
+            </button>
+
+                <ul>
+                <li>Home</li>
+                <li class="has-children">World 
+                        <h4>World</h4>
+                        <ul>
+                        <li>Africa</li>
+                        <li>Australia</li>
+                        <li>Americas</li>
+                        <li>Asia Pacific</li>
+                        <li>Europe</li>
+                        <li>Middle East</li>
+                        </ul>
+                    </li>
+                <li>U.S.</li>
+                <li>Politics</li>
+                <li>N.Y.</li>
+                <li>Business</li>
+                <li>Opinion</li>
+                <li>Tech</li>
+                <li>Science</li>
+                <li>Health</li>
+                <li>Sports</li>
+                <li>Arts</li>
+                <li>Books</li>
+                <li>Style</li>
+                <li>Food</li>
+                <li>Travel</li>
+                <li>Magazine</li>
+                <li>T Magazine</li>
+                <li>Real Estate</li>
+                <li>Obituaries</li>
+                <li>More</li>
+              </ul>
+        
+          </li>
+          <li>
+            <i class="fas fa-search"></i>
+          </li>
+          <li class="caps">Space & Cosmos</li>
+          <li id="logo">The New York Times</li>
+          <li class="subscribe"><a href="#">Subscribe for full access</a></li>
+          <li><button>Log in</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <style>
+
+
+    </style>
+    <script>
+      const menu = document.querySelector("#menu");
+
+      menu.addEventListener("click", handleClick);
+      menu.addEventListener("mouseleave", handleLeave);
+
+      function handleClick() {
+        console.log(this)
+        this.classList.add("active");
+      }
+
+      function handleLeave() {
+        this.classList.remove("active");
+      }
+
+    </script>
+  </body>
+</html>

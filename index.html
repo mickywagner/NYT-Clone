@@ -14,16 +14,16 @@
     <div class="container">
       <nav>
         <ul>
-            <li>
-                    <i class="fas fa-bars"></i>
-            </li>
-            <li>
-                    <i class="fas fa-search"></i>
-            </li>
-            <li class="caps">Space & Cosmos</li>
-            <li id="logo">The New York Times</li>
-            <li class="subscribe"><a href="#">Subscribe for full access</a></li>
-            <li><button>Log in</button></li>
+          <li>
+            <i class="fas fa-bars"></i>
+          </li>
+          <li>
+            <i class="fas fa-search"></i>
+          </li>
+          <li class="caps">Space & Cosmos</li>
+          <li class="logo">The New York Times</li>
+          <li class="subscribe"><a href="#">Subscribe for full access</a></li>
+          <li><button>Log in</button></li>
         </ul>
       </nav>
 
@@ -364,12 +364,152 @@
           editor
         </section>
         <section class="popular">
-          popular
+          <h4>Most Popular</h4>
+          <ul>
+            <li>
+              A G.O.P. Star Emerges in Impeachment Hearings. Democratic Donors
+              Notice.
+            </li>
+            <li>Is It Time Gauguin Got Canceled?</li>
+            <li>
+              Opinion: Mike Pompeo: Last in His Class at West Point in Integrity
+            </li>
+            <li>
+              The Streaming Era Has Finally Arrived. Everything Is About to
+              Change.
+            </li>
+            <li>
+              Impeachment Investigators Exploring Whether Trump Lied to Mueller
+            </li>
+            <li>Terry O’Neill, Photographer of the Famous, Is Dead at 81</li>
+            <li>What We Learned in N.F.L. Week 11</li>
+            <li>For Sale: Serena Williams’s Broken Racket. Yes, That One.</li>
+            <li>
+              Opinion: Stephen Miller Is a White Nationalist. Does It Matter?
+            </li>
+            <li>
+              Opinion: Mueller and Comey Failed Their Tests. She Passed Hers.
+            </li>
+          </ul>
         </section>
       </section>
 
       <footer class="primary-footer">
-        foot 1
+        <h1 class="logo">
+          The New York Times<span id="goToHome">Go to homepage >></span>
+        </h1>
+        <div class="listings">
+          <ul>
+            <li class="has-sub">
+              News
+              <ul>
+                <li>Home Page</li>
+                <li>World</li>
+                <li>U.S.</li>
+                <li>Politics</li>
+                <li>Election 2020</li>
+                <li>New York</li>
+                <li>Business</li>
+                <li>Tech</li>
+                <li>Science</li>
+                <li>Sports</li>
+                <li>Obituaries</li>
+                <li>Today's Paper</li>
+                <li>Corrections</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="has-sub">
+              Opinion
+              <ul>
+                <li>Today's Opinion</li>
+                <li>Op-Ed Columnists</li>
+                <li>Editorials</li>
+                <li>Op-Ed Contiributors</li>
+                <li>Letters</li>
+                <li>Sunday Review</li>
+                <li>Video: Opinion</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="has-sub">
+              Arts
+              <ul>
+                <li>Today's Arts</li>
+                <li>Art & Design</li>
+                <li>Books</li>
+                <li>Dance</li>
+                <li>Movies</li>
+                <li>Music</li>
+                <li>Pop Culture</li>
+                <li>Television</li>
+                <li>Theater</li>
+                <li>Video Arts</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="has-sub">
+              Living
+              <ul>
+                <li>Automobiles</li>
+                <li>Cooking</li>
+                <li>Crossword</li>
+                <li>Education</li>
+                <li>Food</li>
+                <li>Health</li>
+                <li>Jobs</li>
+                <li>Magazine</li>
+                <li>Parenting</li>
+                <li>Real Estate</li>
+                <li>Style</li>
+                <li>T Magazine</li>
+                <li>Travel</li>
+                <li>Love</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="has-sub">
+              Listings & More
+              <ul>
+                <li>Reader Center</li>
+                <li>Wirecutter</li>
+                <li>Live Events</li>
+                <li>The Learning Network</li>
+                <li>Tools & Services</li>
+                <li>N.Y.C. Events Guide</li>
+                <li>Multimedia</li>
+                <li>Photography</li>
+                <li>Video</li>
+                <li>Newsletters</li>
+                <li>NYT Store</li>
+                <li>Times Journeys</li>
+                <li>Manage My Account</li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="subscribe">
+            <li class="has-sub">
+              Subscribe
+              <ul>
+                <li>Home Delivery</li>
+                <li>Digital Subscriptions</li>
+                <li>Crossword</li>
+                <li>Cooking</li>
+                <li>Email Newsletters</li>
+                <li>Corporate Subscriptions</li>
+                <li>Education Rate</li>
+                <li>Mobile Applications</li>
+                <li>Replica Edition</li>
+                <li>Español</li>
+                <li>中文网</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </footer>
 
       <footer class="secondary-footer">
@@ -389,5 +529,24 @@
         </ul>
       </footer>
     </div>
+
+    <script>
+      const footerSubMenus = document.querySelectorAll('.has-sub') 
+
+      footerSubMenus.forEach(menu => {
+        menu.addEventListener('click', (e) => {
+           let active = document.querySelector('.active') 
+           let li = e.target
+           li.classList.add('active')
+           if (!active) {
+             return
+           } else {
+            active.classList.remove('active')
+           }
+        })})
+
+      
+    
+    </script>
   </body>
 </html>
