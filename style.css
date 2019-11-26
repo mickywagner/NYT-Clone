@@ -193,34 +193,81 @@ article p {
     Related Articles
    =========================
 */
+
 .more-articles {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, 1fr)
+    
 }
 
 .related {
-    background: lightgrey;
     grid-row: span 2;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.related-stories {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .editor-picks {
-    background: lightseagreen
+    padding: 10px;
+    border-top: 1px solid black;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.editor-picks .story {
+    padding-bottom: 50px;
+}
+
+
+.story {
+    flex: 1;
+    min-width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.story h2 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.story h5 {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+.story img {
+    width: 100%;
 }
 
 .popular {
     grid-row: 1 / span 3;
+    font-size: .8em;
     grid-column: 2 / 3;
     padding: 10px;
     border-top: 1px solid black;
     margin-right: 30px;
+    margin-left: 30px;
+}
+
+.popular h4, .related h4, .editor-picks h4 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0;
 }
 
 .popular h4 {
     border-bottom: 1px solid lightgray;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 15px 0;
 }
 
 .popular ul li {
@@ -275,6 +322,7 @@ article p {
     font-size: 1.1em;
 }
 
+ 
 .listings ul .has-sub ul li {
     text-transform: capitalize;
     font-weight: 400;
@@ -292,25 +340,44 @@ article p {
 }
 
 .secondary-footer {
-    background: fuchsia;
-    font-size: 0.8em;
+    border-top: 1px solid lightgray;
+    font-size: 0.7em;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;  
+    display: flex;
     
+    justify-content: center;
 }
 
 .secondary-footer ul {
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
     padding: 10px;
+    width: 90%;
 }
 
 .secondary-footer ul li {
-    margin: 5px 5px;
+    min-width: 100px;
+    padding: 5px;
+    flex: 1;
 }
+
+.secondary-footer ul li:first-child {
+    flex: 5;
+}
+
+
+
 
 @media only screen and (max-width: 1150px) {
     .primary-footer h1, .listings ul li:first-child {
         border-bottom: 1px solid lightgray;
         padding: 12px 0;
+    }
+
+    .listings ul:nth-of-type(5) .has-sub {
+        border-bottom: none;
     }
 
     .listings {
@@ -337,4 +404,15 @@ article p {
         color: rgb(184, 179, 179);
     }
 
+}
+
+@media only screen and (max-width: 750px) {
+    .popular {
+        display: none;
+    }
+
+    .more-articles {
+        display: flex;
+        flex-flow: column;
+    }
 }

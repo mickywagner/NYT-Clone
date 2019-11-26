@@ -357,12 +357,76 @@
       </article>
 
       <section class="more-articles">
+
         <section class="related">
-          related
+          <h4>More in Space & Cosmos</h4>
+          <div class="related-stories">
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/11/26/science/20MARS/20MARS-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>Oxygen on Mars Adds to Atmospheric Mysteries</h2>
+              <h5>Nov. 20</h5>
+            </div>
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/11/19/science/14BLACKHOLE1/14BLACKHOLE1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>A Black Hole Threw a Star Out of the Milky Way Galaxy</h2>
+              <h5>Nov. 14</h5>
+            </div>
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/06/04/science/11starlink01/31SCI-SATELLITES2-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>As SpaceX Launches 60 Starlink Satellites, Scientists See Threat to 'Astronomy Self'</h2>
+              <h5>Nov. 11</h5>
+            </div>
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/11/19/multimedia/13xp-nasa/merlin_150534342_2b9f0eeb-e29d-4eb1-9279-4807b7dba7d5-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>NASA Renames Object After Uproard Over Old Name's Nazi Connotations</h2>
+              <h5>Nov. 13</h5>
+            </div>
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/10/22/science/18SCI-SPACEWALKCHAT1/18SCI-SPACEWALKCHAT1-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>Why NASA's First All Women Spacewalk Made History</h2>
+              <h5>Oct. 13</h5>
+            </div>
+            <div class="story">
+              <img
+                src="https://static01.nyt.com/images/2019/11/26/science/20MARS/20MARS-threeByTwoSmallAt2X.jpg?quality=75&auto=webp&disable=upscale"
+              />
+              <h2>Oxygen onf Mars Adds to Atmospheric Mysteries</h2>
+              <h5>Oct. 11</h5>
+            </div>
+          </div>
         </section>
+
         <section class="editor-picks">
-          editor
+          <h4>Editor's Picks</h4>
+          <div class="related-stories">
+            <div class="story">
+              <img src="https://static01.nyt.com/images/2019/11/24/arts/24snl/24snl-threeByTwoSmallAt2X.png?quality=75&auto=webp&disable=upscale" />
+              <h2>'Saturday Night Live': Will Ferrell Leads a Celebrity Extravaganza</h2>
+              <h5>Nov. 24</h5>
+            </div>
+            <div class="story">
+                <img src="https://static01.nyt.com/images/2019/11/24/arts/24snl/24snl-threeByTwoSmallAt2X.png?quality=75&auto=webp&disable=upscale" />
+                <h2>'Saturday Night Live': Will Ferrell Leads a Celebrity Extravaganza</h2>
+                <h5>Nov. 24</h5>
+              </div>
+              <div class="story">
+                  <img src="https://static01.nyt.com/images/2019/11/24/arts/24snl/24snl-threeByTwoSmallAt2X.png?quality=75&auto=webp&disable=upscale" />
+                  <h2>'Saturday Night Live': Will Ferrell Leads a Celebrity Extravaganza</h2>
+                  <h5>Nov. 24</h5>
+                </div>
+          </div>
         </section>
+
         <section class="popular">
           <h4>Most Popular</h4>
           <ul>
@@ -531,22 +595,20 @@
     </div>
 
     <script>
-      const footerSubMenus = document.querySelectorAll('.has-sub') 
+      const footerSubMenus = document.querySelectorAll(".has-sub");
 
       footerSubMenus.forEach(menu => {
-        menu.addEventListener('click', (e) => {
-           let active = document.querySelector('.active') 
-           let li = e.target
-           li.classList.add('active')
-           if (!active) {
-             return
-           } else {
-            active.classList.remove('active')
-           }
-        })})
-
-      
-    
+        menu.addEventListener("click", e => {
+          let active = document.querySelector(".active");
+          let li = e.target;
+          li.classList.add("active");
+          if (!active) {
+            return;
+          } else {
+            active.classList.remove("active");
+          }
+        });
+      });
     </script>
   </body>
 </html>
