@@ -19,6 +19,7 @@
     flex-direction: column;
 }
 
+
 /* =========================
     Lists
    =========================
@@ -49,7 +50,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     background: white;
-    width: 100%;
+    width: 100vw;
 }
 
 nav ul {
@@ -58,6 +59,7 @@ nav ul {
     flex-direction: row;
     align-items: center;
     font-size: .9em;
+    padding: 0 10px;
 }
 
 nav ul li {
@@ -150,6 +152,7 @@ nav button {
 article {
     text-align: center;
     margin-top: 50px;
+    border: 2px solid red;
 }
 
 article h1 {
