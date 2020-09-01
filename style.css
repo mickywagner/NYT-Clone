@@ -16,7 +16,9 @@
 
 .container {
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
+    width: 100vw;
 }
 
 
@@ -50,7 +52,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     background: white;
-    width: 100vw;
+    width: 100%;
 }
 
 nav ul {
@@ -152,13 +154,12 @@ nav button {
 article {
     text-align: center;
     margin-top: 50px;
-    border: 2px solid red;
 }
 
 article h1 {
     font-style: italic;
     max-width: 600px;
-    min-width: 400px;
+    /* min-width: 400px; */
     margin: 0 auto;
     padding: 20px 200px 20px 20px;
     text-align: left;
@@ -167,7 +168,7 @@ article h1 {
 
 article h4 {
     max-width: 600px;
-    min-width: 400px;
+    /* min-width: 400px; */
     margin: 0 auto;
     text-align: justify; 
     padding: 5px 20px;
@@ -176,7 +177,7 @@ article h4 {
 
 article p {
     max-width: 600px;
-    min-width: 400px;
+    /* min-width: 400px; */
     margin: 0 auto;
     line-height: 1.25em;
     text-align: justify;
@@ -460,6 +461,10 @@ article p {
 }
 
 @media only screen and (max-width: 750px) {
+    article h1 {
+        padding: 10px;
+    }
+
     .popular {
         display: none;
     }
